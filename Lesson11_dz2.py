@@ -1,7 +1,7 @@
 class MyException:
-    def get_division(self,x,y):
+    def get_division(self, x, y):
         try:
-            res = x/y
+            res = x / y
         except ZeroDivisionError:
             return print('Деление на ноль запрещено')
         else:
