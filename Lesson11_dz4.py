@@ -73,6 +73,9 @@ while True:
             print('Ошибка в указании аргументов')
             continue
         else:
+            if int(nums) < 0:
+                print("количество может быть только целое и положительное")
+                continue
             w1.get_out(types, name, nums, dep)
             continue
     if start == 'stop':
